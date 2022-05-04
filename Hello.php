@@ -2,12 +2,9 @@
 require_once './User.php';
 require_once './Comment.php';
 require_once '../vendor/autoload.php';
-//use Symfony\Component\Validator\Constraints\Length;
-//use Symfony\Component\Validator\Constraints\NotBlank;
 
 use Respect\Validation\Rules\Size;
 use Symfony\Component\Validator\Constraints\EmailValidator;
-//use Symfony\Component\Validator\Constraint as Assert;
 use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Validator\Validation;
 
