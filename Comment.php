@@ -15,25 +15,8 @@ class Comment
 
     public function __construct(User $user, string $message)
     {
-        // $validator = Validation::createValidator();
-        // $vId = $validator->validate($message, [
-        //     new NotBlank(),
-        //     new NotNull(),
-        // ]);
-
-        // if (count($vId) !== 0) {
-        //     foreach ($vId as $v) {
-        //         echo $v->getMessage() . '<br>';
-        //     }
-        // } else {
-            // echo "Everything cool!";
-            $this->user = $user;
-            $this->message = $message;
-            //$this->creationDateTime = time();
-        // }
-        // $this->user = $user;
-        // $this->message = $message;
-        //$this->creatingUserDateTime = $user->getCreationDateTime();
+        $this->user = $user;
+        $this->message = $message;
     }
 
     public function afterDateTime(DateTime $datetime)
