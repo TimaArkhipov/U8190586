@@ -11,7 +11,6 @@ class Comment
 {
     private $user;
     private $message;
-    //private $creatingUserDateTime; 
 
     public function __construct(User $user, string $message)
     {

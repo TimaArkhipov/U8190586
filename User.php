@@ -22,7 +22,6 @@ class User
         $validator = Validation::createValidator();
         $vId = $validator->validate($id, [
             new Length(['max' => 10, 'maxMessage' => 'Ваш id должно быть =< {{ limit }} символов']),
-            //Should I do length validation for a number?  
             new Positive(),
             new NotBlank(),
         ]);
@@ -80,5 +79,6 @@ class User
     public function getCreationDateTime()
     {
         return $this->creationDateTime;
+        //for commit
     }
 }
